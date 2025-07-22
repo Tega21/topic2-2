@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Spring Boot App</title>
+    <link rel="stylesheet" th:href="@{/css/style.css}" />
+</head>
+
+<body>
+
+<!-- Shared Header -->
+<header style="background-color: #f7f7f7; padding: 15px;">
+    <h1 style="text-align: center;">Welcome to my CST-339 Spring Boot Activity Application</h1>
+</header>
+
+<!-- Optional Navigation -->
+<nav style="background-color: #eeeeee; padding: 10px;">
+    <a th:href="@{/login}">Login</a> |
+    <a th:href="@{/orders}">Orders</a>
+</nav>
+
+<!-- Page-specific content goes here -->
+<main layout:fragment="content" style="margin: 20px;">
+    <!-- Child page content will be inserted here -->
+</main>
+
+<!-- Shared Footer -->
+<footer style="text-align: center; padding: 15px; font-size: small; color: gray;">
+    <p>&copy; 2025 CST-339 Spring Boot App</p>
+</footer>
+
+</body>
+</html>
