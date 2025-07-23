@@ -13,9 +13,9 @@
     </parent>
 
     <groupId>com.gcu</groupId>
-    <artifactId>topic2-2</artifactId>
+    <artifactId>topic3-1</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>topic2-2</name>
+    <name>topic3-1</name>
     <description>Spring Boot Activity 2 Project</description>
 
     <properties>

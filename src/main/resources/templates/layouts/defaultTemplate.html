@@ -1,35 +1,33 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymeleaf.org"
       xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
-
 <head>
+    <title layout:title-pattern="$CONTENT_TITLE - GCU">Default Template</title>
     <meta charset="UTF-8">
-    <title>Spring Boot App</title>
-    <link rel="stylesheet" th:href="@{/css/style.css}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body { margin: 0; font-family: Arial, sans-serif; }
+        header { background-color: #522398; color: white; padding: 20px; text-align: center; }
+        nav { background-color: #f0f0f0; padding: 10px; text-align: center; }
+        nav a { margin: 0 10px; text-decoration: none; color: #522398; }
+        main { padding: 20px; }
+        .logo { max-height: 60px; }
+    </style>
 </head>
-
 <body>
-
-<!-- Shared Header -->
-<header style="background-color: #f7f7f7; padding: 15px;">
-    <h1 style="text-align: center;">Welcome to my CST-339 Spring Boot Activity Application</h1>
+<header>
+    <h1>Welcome to my CST-339 Spring Boot Activity Application</h1>
 </header>
-
-<!-- Optional Navigation -->
-<nav style="background-color: #eeeeee; padding: 10px;">
-    <a th:href="@{/login}">Login</a> |
-    <a th:href="@{/orders}">Orders</a>
+<nav>
+    <a href="/">GCU</a>
+    <a href="/">Home</a>
+    <a href="#">Shop</a>
+    <a href="#">News and Events</a>
 </nav>
-
-<!-- Page-specific content goes here -->
-<main layout:fragment="content" style="margin: 20px;">
-    <!-- Child page content will be inserted here -->
+<main>
+    <div layout:fragment="content">
+        <!-- Page content will be inserted here -->
+    </div>
 </main>
-
-<!-- Shared Footer -->
-<footer style="text-align: center; padding: 15px; font-size: small; color: gray;">
-    <p>&copy; 2025 CST-339 Spring Boot App</p>
-</footer>
-
 </body>
 </html>
